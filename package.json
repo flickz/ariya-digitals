@@ -1,0 +1,60 @@
+{
+  "name": "ariya-digitals",
+  "version": "1.0.0",
+  "description": "Ariya digitals login system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec babel-node -- src/server/index.js"
+  },
+  "keywords": [
+    "Ariya digitals"
+  ],
+  "author": "Oluwaseun Omoyajowo",
+  "license": "MIT",
+  "dependencies": {
+    "@rebass/grid": "^6.1.0",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "lodash": "^4.17.15",
+    "next": "^9.1.1",
+    "next-routes": "^1.4.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "serve-favicon": "^2.5.0",
+    "styled-components": "^4.4.1",
+    "styled-system": "^5.1.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-lodash": "^3.3.4",
+    "chai": "^4.2.0",
+    "eslint": "^6.5.1",
+    "eslint-config-opencollective": "^2.0.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-react": "^7.16.0",
+    "file-loader": "^4.2.0",
+    "husky": "^3.1.0",
+    "lint-staged": "^9.4.3",
+    "mocha": "^6.2.2",
+    "nodemon": "^1.19.4",
+    "prettier": "^1.18.2",
+    "webpack-bundle-analyzer": "^3.6.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
