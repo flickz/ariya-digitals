@@ -17,9 +17,6 @@ const Link = styled.a`
   ${typography};
   ${fontSize}
   ${fontWeight}
-
-  &:hover {
-  }
 `;
 
 Link.defaultProps = {
